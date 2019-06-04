@@ -86,9 +86,9 @@
 				
 					<a class="github" target="_blank" href="https://github.com/cloudatlasx" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="知乎" target="_blank" href="#" title="知乎"><i class="icon-知乎"></i></a>
 		        
-					<a class="rss" target="_blank" href="/Oracle/atom.xml" title="rss"><i class="icon-rss"></i></a>
+					<a class="RSS" target="_blank" href="/Oracle/atom.xml" title="RSS"><i class="icon-RSS"></i></a>
 		        
 			</div>
 		</nav>
@@ -131,9 +131,9 @@
 					
 						<a class="github" target="_blank" href="https://github.com/cloudatlasx" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="知乎" target="_blank" href="#" title="知乎"><i class="icon-知乎"></i></a>
 			        
-						<a class="rss" target="_blank" href="/Oracle/atom.xml" title="rss"><i class="icon-rss"></i></a>
+						<a class="RSS" target="_blank" href="/Oracle/atom.xml" title="RSS"><i class="icon-RSS"></i></a>
 			        
 				</div>
 			</nav>
@@ -314,22 +314,31 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "https://cloudatlasx.github.io/Oracle/Oracle/categories/index.html",
-  owner: 'cloudatlasx',
-  repo: 'Oracle',
-  oauth: {
-    client_id: 'bb5a31e5bd0359527304',
-    client_secret: 'ef3130c49b2744b77b6ab607820c1b005283e3c1',
-  },
-})
-gitment.render('gitment-ctn')
-</script>
   
+  
+    <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+      <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "br51YcrnKcGvEjv3GGzChL4C-gzGzoHsz",
+            app_key: "gMTQsLAAakBM81aovDPTGYcG",
+            placeholder: "Leven a comment",
+            avatar:"mm"
+        });
+    }
+</script>
+    </section>
+  
+
+
 
 
           </div>
