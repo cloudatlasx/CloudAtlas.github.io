@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://www.crush.kim">
-  <title>Matrix 的个人笔记</title>
+  <title>java 函数式接口接收双冒号符返回方法 | Matrix 的个人笔记</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Matrix 的个人笔记">
-<meta property="og:url" content="https://www.crush.kim/index.html">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839@FunctionalInterfaceinterface Functional1 &amp;#123;    void run();&amp;#125;@FunctionalInterfaceinterface Functional2&amp;lt;T&amp;gt; &amp;#123;    T">
+<meta name="keywords" content="tag1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java 函数式接口接收双冒号符返回方法">
+<meta property="og:url" content="https://www.crush.kim/2019/09/15/java 函数式接口接收双冒号符返回方法/index.html">
 <meta property="og:site_name" content="Matrix 的个人笔记">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839@FunctionalInterfaceinterface Functional1 &amp;#123;    void run();&amp;#125;@FunctionalInterfaceinterface Functional2&amp;lt;T&amp;gt; &amp;#123;    T">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-09-15T15:10:11.158Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Matrix 的个人笔记">
+<meta name="twitter:title" content="java 函数式接口接收双冒号符返回方法">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839@FunctionalInterfaceinterface Functional1 &amp;#123;    void run();&amp;#125;@FunctionalInterfaceinterface Functional2&amp;lt;T&amp;gt; &amp;#123;    T">
   
     <link rel="alternative" href="/atom.xml" title="Matrix 的个人笔记" type="application/atom+xml">
   
@@ -164,16 +169,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-java 函数式接口接收双冒号符返回方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-java 函数式接口接收双冒号符返回方法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/15/java 函数式接口接收双冒号符返回方法/">java 函数式接口接收双冒号符返回方法</a>
+    <h1 class="article-title" itemprop="name">
+      java 函数式接口接收双冒号符返回方法
     </h1>
   
 
@@ -189,6 +192,37 @@
         <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Functional1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Functional2</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="function">T <span class="title">get</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">runMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// do something</span></span><br><span class="line">        System.out.println(<span class="string">"demo runMethod"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Long <span class="title">getMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"demo getMethod"</span>);</span><br><span class="line">        <span class="keyword">return</span> System.currentTimeMillis();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FunctionalDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Demo demo = <span class="keyword">new</span> Demo();</span><br><span class="line">        <span class="comment">// 当函数式接口返回值为void 的时候，有无返回值都可以通过</span></span><br><span class="line">        Functional1 case1 = demo::runMethod;</span><br><span class="line">        Functional1 case2 = demo::getMethod;</span><br><span class="line">        case1.run();</span><br><span class="line">        case2.run();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 当函数式接口有返回值的时候，则必须满足泛型的规则</span></span><br><span class="line">        <span class="comment">// Functional2 case3 = demo::runMethod; 出错</span></span><br><span class="line">        Functional2&lt;Long&gt; case4 = demo::getMethod;</span><br><span class="line">        System.out.println(case4.get());</span><br><span class="line">        Functional2&lt;Object&gt; case5 = demo::getMethod;</span><br><span class="line">        System.out.println(case5.get());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://ww1.sinaimg.cn/large/0072M4BJgy1g3odpjj3b0j308j08jdgu.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://ww1.sinaimg.cn/large/0072M4BJgy1g3odpkihlpj30df0d8abx.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -219,16 +253,75 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/15/java 函数式接口接收双冒号符返回方法/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://www.crush.kim/2019/09/15/java 函数式接口接收双冒号符返回方法/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/15/java 多线程基础/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">java 多线程基础</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -248,120 +341,40 @@
 
 
 
-
-
   
-    <article id="post-java 多线程基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/15/java 多线程基础/">java 多线程基础</a>
-    </h1>
   
 
-        
-        <a href="/2019/09/15/java 多线程基础/" class="archive-article-date">
-  	<time datetime="2019-09-15T15:06:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>基础多线程的的实现方式。</p>
-<ul>
-<li>继承 <code>Thread</code> 类重写<code>run</code> 方法</li>
-<li>实现<code>Runnable</code> 接口，重写<code>run</code> 方法，该接口是函数式接口</li>
-<li>最后一定要用 <code>Thread</code> 调用<code>start()</code> 方法</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String title;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyThread</span><span class="params">(String title)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.title = title;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">20</span>; i++) &#123;</span><br><span class="line">            System.out.println(title + <span class="string">"的第："</span> + i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyRunnable</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"do something"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Thread(<span class="keyword">new</span> MyThread(<span class="string">"MyThread"</span>), <span class="string">"Thread-01"</span>);</span><br><span class="line"><span class="keyword">new</span> Thread(<span class="keyword">new</span> MyRunnable(), <span class="string">"Runnable-01"</span>);</span><br><span class="line"><span class="keyword">new</span> Thread(()-&gt;&#123;</span><br><span class="line">    System.out.println(<span class="string">"do something"</span>);</span><br><span class="line">&#125;, <span class="string">"Runnable-02"</span>);</span><br></pre></td></tr></table></figure>
-<p>​        重写的都是 run方法，调用的线程要通过start 来实现，run 方法只是定义了业务，start 的才是创建一个线程，并<strong>等待</strong>执行。注意是等待，线程start 之后只代表启动了线程，具体执行时间需要系统分配。 这就是为什么在多个线程下执行顺序是不固定的。</p>
-<p>​        继承<code>Thread</code> 和 实现<code>Runnable</code> 接口的区别： 首先查看Thread 的源代码发现<code>publicclass Thread implements Runnable</code> Thread 类也是继承 Runnable 接口的，并且在内部有个 Runnable 的属性 <code>/* What will be run. */private Runnable target;</code> 在构造函数里面也是传入 Runnable</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Thread</span><span class="params">(Runnable target)</span> </span>&#123;</span><br><span class="line">    init(<span class="keyword">null</span>, target, <span class="string">"Thread-"</span> + nextThreadNum(), <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>所以最终我们需要的都是一个实现了Runnable 接口的对象，传入到 Thread然后 start 即可。</p>
-<p>我们只需要实现 Runnable 接口，覆写run 方法实现我们的业务代码，Thread 功能就是线程的相关</p>
-<p>​        run 和 start 的区别： 首先查看下Runnable 接口的源代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * When an object implementing interface &lt;code&gt;Runnable&lt;/code&gt; is used</span></span><br><span class="line"><span class="comment">     * to create a thread, starting the thread causes the object's</span></span><br><span class="line"><span class="comment">     * &lt;code&gt;run&lt;/code&gt; method to be called in that separately executing</span></span><br><span class="line"><span class="comment">     * thread.</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;</span></span><br><span class="line"><span class="comment">     * The general contract of the method &lt;code&gt;run&lt;/code&gt; is that it may</span></span><br><span class="line"><span class="comment">     * take any action whatsoever.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@see</span>     java.lang.Thread#run()</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>首先它是一个接口函数，然后只定义了一个没有返回值的run 方法。</p>
-<p>所以Runnable 接口只是定义了一个对外的函数接口让我们实现业务代码。所以我们实现run 方法和 运行run 方法是和线程没有关系的，我们需要将 Runnable 传入到 Thread 里面，然后调用 Thread 的start 方法。该方法由JVM 实现，JVM 利用 JNI(Java Native Interface) 技术对不同的操作系统实现开辟线程的操作。</p>
-<p>实现带返回值的：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实现 Callable 接口，传入到FutureTask 实现带返回值的多线程</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyCallable</span> <span class="keyword">implements</span> <span class="title">Callable</span>&lt;<span class="title">Long</span>&gt; </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Long <span class="title">call</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> System.currentTimeMillis();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FutureTaskDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        Callable callable = <span class="keyword">new</span> MyCallable();</span><br><span class="line"></span><br><span class="line">        FutureTask futureTask = <span class="keyword">new</span> FutureTask(callable);</span><br><span class="line">        <span class="comment">// 传入Runnable和一个固定值</span></span><br><span class="line">        FutureTask futureTask2 = <span class="keyword">new</span> FutureTask(()-&gt;&#123;</span><br><span class="line">            System.out.println(<span class="string">"do something"</span>);</span><br><span class="line">        &#125;, <span class="string">"success"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 传入到 Thread的调用start启动线程，可以看出，futureTask 间接继承了Runnable</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">new</span> Thread(futureTask).start();</span><br><span class="line">        <span class="keyword">new</span> Thread(futureTask2).start();</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * get方法：获取计算结果（如果还没计算完，也是必须等待的）</span></span><br><span class="line"><span class="comment">         *</span></span><br><span class="line"><span class="comment">         * cancel方法：还没计算完，可以取消计算过程</span></span><br><span class="line"><span class="comment">         *</span></span><br><span class="line"><span class="comment">         * isDone方法：判断是否计算完</span></span><br><span class="line"><span class="comment">         *</span></span><br><span class="line"><span class="comment">         * isCancelled方法：判断计算是否被取消</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        System.out.println(futureTask.get());</span><br><span class="line">        System.out.println(futureTask2.get());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这些方法可以很简单的实现多线程的方式，但是不好管理并且会造成系统资源的浪费，所以在实际使用中我们需要<code>Executor线程池</code></p>
-<p>最后：我们可以用 TimeUnit.MINUTES.sleep(4);TimeUnit.SECONDS.sleep(4);等来 替换 Thread.sleep();</p>
-<p>具体查看<a href="https://www.cnblogs.com/xiadongqing/p/9925567.html" target="_blank" rel="noopener"><a href="https://www.cnblogs.com/xiadongqing/p/9925567.html" target="_blank" rel="noopener">TimeUnit类中的sleep() 和Thread.sleep()</a></a></p>
+  
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多线程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/java//" class="article-tag-list-link color5">java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/15/java 多线程基础/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
+  
 
   
   
+  
+    <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+      <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "br51YcrnKcGvEjv3GGzChL4C-gzGzoHsz",
+            app_key: "gMTQsLAAakBM81aovDPTGYcG",
+            placeholder: "Leven a comment",
+            avatar:"mm"
+        });
+    }
+</script>
+    </section>
+  
+
+
 
 
           </div>
@@ -383,8 +396,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
